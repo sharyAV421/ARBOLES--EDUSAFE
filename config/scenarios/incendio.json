@@ -1,0 +1,15 @@
+{
+  "id": "fire-smoke",
+  "title": "Incendio o presencia de humo",
+  "description": "Árbol demostrativo sin rutas ni instrucciones operativas aprobadas.",
+  "root_id": "fire-visible",
+  "nodes": [
+    {"id": "fire-visible", "type": "decision", "question": "¿Observa fuego o humo?", "yes": "fire-seen", "no": "fire-other"},
+    {"id": "fire-seen", "type": "terminal", "protocol_id": "demo-fire-observed"},
+    {"id": "fire-other", "type": "terminal", "protocol_id": "demo-fire-not-observed"}
+  ],
+  "protocols": [
+    {"id": "demo-fire-observed", "title": "Demostración: fuego o humo observado", "scenario_id": "fire-smoke", "instructions": ["DATOS DE DEMOSTRACIÓN — NO APROBADO PARA EMERGENCIAS REALES."], "version": "0.1-demo", "approval_status": "unapproved", "approving_authority": null, "review_date": null},
+    {"id": "demo-fire-not-observed", "title": "Demostración: fuego o humo no observado", "scenario_id": "fire-smoke", "instructions": ["DATOS DE DEMOSTRACIÓN — NO APROBADO PARA EMERGENCIAS REALES."], "version": "0.1-demo", "approval_status": "unapproved", "approving_authority": null, "review_date": null}
+  ]
+}

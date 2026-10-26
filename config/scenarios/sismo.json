@@ -1,0 +1,15 @@
+{
+  "id": "earthquake",
+  "title": "Sismo",
+  "description": "Árbol demostrativo sin instrucciones operativas aprobadas.",
+  "root_id": "quake-inside",
+  "nodes": [
+    {"id": "quake-inside", "type": "decision", "question": "¿Se encuentra dentro de un edificio?", "yes": "quake-indoor-demo", "no": "quake-outdoor-demo"},
+    {"id": "quake-indoor-demo", "type": "terminal", "protocol_id": "demo-quake-indoor"},
+    {"id": "quake-outdoor-demo", "type": "terminal", "protocol_id": "demo-quake-outdoor"}
+  ],
+  "protocols": [
+    {"id": "demo-quake-indoor", "title": "Demostración: consulta interior", "scenario_id": "earthquake", "instructions": ["DATOS DE DEMOSTRACIÓN — NO APROBADO PARA EMERGENCIAS REALES."], "version": "0.1-demo", "approval_status": "unapproved", "approving_authority": null, "review_date": null},
+    {"id": "demo-quake-outdoor", "title": "Demostración: consulta exterior", "scenario_id": "earthquake", "instructions": ["DATOS DE DEMOSTRACIÓN — NO APROBADO PARA EMERGENCIAS REALES."], "version": "0.1-demo", "approval_status": "unapproved", "approving_authority": null, "review_date": null}
+  ]
+}
