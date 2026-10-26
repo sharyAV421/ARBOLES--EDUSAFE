@@ -1,0 +1,1 @@
+"""EduSafe application package."""
